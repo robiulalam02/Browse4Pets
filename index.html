@@ -19,7 +19,6 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      
       .sora-font {
         font-family: "Sora", serif;
       }
@@ -117,6 +116,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <!-- categories section -->
       <section class="md:px-[10%] px-4 mb-16 md:mb-28">
@@ -441,7 +441,7 @@
       </section>
 
       <!-- Everyday Low Price -->
-      <section class="md:px-[10%] px-4 mb-16 md:mb-28">
+      <section class="md:px-[10%] px-4 md:-mb-28 -mb-40">
         <h1 class="text-3xl md:text-4xl adlam-font">Everyday Low Price</h1>
 
         <!-- low price card container -->
@@ -454,7 +454,9 @@
             <div class="flex flex-col gap-4 ml-0 md:ml-14">
               <div class="flex flex-col gap-2">
                 <p class="hidden text-lg md:block">Under Price</p>
-                <h3 class="text-2xl md:text-3xl adlam-font">Pet Grooming Mitt</h3>
+                <h3 class="text-2xl md:text-3xl adlam-font">
+                  Pet Grooming Mitt
+                </h3>
                 <p class="hidden text-xl font-semibold text-white md:block">
                   (Easy Hair Removal)
                 </p>
@@ -468,17 +470,83 @@
           >
             <div class="flex flex-col gap-2">
               <h3 class="text-2xl md:text-3xl adlam-font">T-Shirt for Dogs</h3>
-              <h1 class="text-4xl text-yellow-300 md:text-5xl adlam-font">$7.99</h1>
+              <h1 class="text-4xl text-yellow-300 md:text-5xl adlam-font">
+                $7.99
+              </h1>
             </div>
           </div>
         </div>
       </section>
-      
-      <!-- Subscribe Section -->
-       <section class="md:px-[10%] px-4 mb-16 md:mb-28">
 
-       </section>
+      <!-- Subscribe Section -->
+      <section class="md:px-[10%] px-4">
+        <!-- subscribe container -->
+        <div
+          class="relative flex flex-col p-4 rounded-lg -bottom-56 md:p-12 md:flex-row justify-evenly bg-pink-50"
+        >
+          <div class="flex justify-center">
+            <img src="c1-assets/cute-pet-mid.png" alt="" />
+          </div>
+          <div
+            class="flex flex-col items-center justify-center w-full gap-4 text-center md:gap-10 md:text-left md:items-start md:w-7/12"
+          >
+            <h3 class="text-3xl md:text-4xl adlam-font">Get Pawsome News!</h3>
+            <p class="font-medium">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <div class="w-full">
+              <input
+                class="w-full p-4 rounded-lg h-14 md:w-96"
+                placeholder="Enter email..."
+                type="email"
+              />
+            </div>
+            <div>
+              <button class="px-6 py-2 font-semibold bg-yellow-300 rounded-lg">
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer class="bg-[#FFDC2680] md:px-[10%] px-4 pt-96 pb-12 md:pb-24">
+      <!-- footer container main -->
+      <div class="flex flex-col justify-between gap-8 md:flex-row">
+        <div class="flex flex-col w-full gap-4 md:w-3/12">
+          <div class="flex items-center gap-4">
+            <img src="c1-assets/logo-footer.png" alt="browse4pets logo" />
+            <h3 class="text-2xl font-semibold">
+              Browse<span class="text-yellow-300">4</span>Pets
+            </h3>
+          </div>
+          <p>
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends
+          </p>
+        </div>
+
+        <div class="flex justify-start w-full md:justify-center md:w-4/12">
+          <ul class="flex flex-col justify-between gap-4 font-medium md:gap-0">
+            <li><a href="">Find a pet</a></li>
+            <li><a href="">Breeds</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col items-start justify-start w-full gap-4 md:items-end md:justify-end md:w-4/12">
+          <div>
+            <p class="font-medium">Follow Us</p>
+            <div class="flex gap-4 mt-4 text-xl">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
